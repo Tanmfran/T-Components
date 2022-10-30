@@ -1,5 +1,6 @@
 import React from 'react'
 import './button.scss'
+import classnames from 'classnames';
 
 interface ButtonProps {
   /**
@@ -40,6 +41,10 @@ export function Button({
   return (
     <button
       type="button"
+      // className={classnames({
+      //   'primary-button': true,
+      //   'secondary-button': true,
+      // })}
       className={['storybook-button', `storybook-button--${size}`, mode].join(
         ' ',
       )}
